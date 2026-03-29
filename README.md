@@ -69,7 +69,8 @@ pip install opencv-python numpy
 Run the following command in terminal:
 
 ```
-python panorama_generator.py --img1 images/img1.jpg --img2 images/img2.jpg
+pip install -r requirements.txt
+python panorama_generator.py images/q11.jpg images/q22.jpg
 ```
 
 ---
