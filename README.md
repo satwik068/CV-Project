@@ -1,33 +1,113 @@
-# Image-Stitching-OpenCV
-Simple image stitching algorithm using SIFT, homography, KNN and Ransac in Python.
-For full details and explanations, you're welcome to read `image_stitching.pdf`. 	
+# Panorama Image Stitching using OpenCV
 
-The project is to implement a featured based automatic image stitching algorithm. When we input two images with overlapped fields, we expect to obtain a wide seamless panorama.
+## Project Overview
 
-We use scale invariant features transform(SIFT) to extract local features of the input images, K nearest neighbors algorithms to match these features and Random sample consensus(Ransac) to calculate the homograph matrix, which will be used for image warping. Finally we apply a weighted matrix as a mask for image blending.
+This project implements a simple **image stitching system** using Computer Vision techniques.
+The goal is to combine two overlapping images and generate a **single panoramic image**.
 
-## Dependency
-- Python 2 or 3 
-- OpenCV 3
+This project is inspired by standard image stitching methods and has been **modified and implemented independently**.
 
-## Usage
-`python Image_Stitching [/PATH/img1] [/PATH/img2]`
+---
 
-## Sample 
+## Objective
 
-## Input images
-<img src="https://github.com/linrl3/Image-Stitching-OpenCV/blob/master/images/q11.jpg" width=300 height=400 >   <img src="https://github.com/linrl3/Image-Stitching-OpenCV/blob/master/images/q22.jpg" width=300 height=400 >
+* To understand feature-based image stitching
+* To apply concepts like feature detection, matching, and transformation
+* To generate a seamless panoramic image from multiple inputs
 
-## Matching
-![matching](https://github.com/linrl3/Image-Stitching-OpenCV/blob/master/images/matching.jpg)
+---
 
-## Output image
-![pano](https://github.com/linrl3/Image-Stitching-OpenCV/blob/master/images/panorama.jpg)
+## Technologies Used
 
-## other examples
+* Python
+* OpenCV
+* NumPy
 
-Room:
-![room](https://github.com/linrl3/Image-Stitching-OpenCV/blob/master/images/room.jpg)
+---
 
-Another building: This is a stitching of three related images. It doesn't work so well. Trying to improve.
-![gym](https://github.com/linrl3/Image-Stitching-OpenCV/blob/master/images/gym.jpg)
+## Concepts Used
+
+* SIFT (Scale Invariant Feature Transform)
+* Feature Matching (KNN)
+* RANSAC (Random Sample Consensus)
+* Homography Matrix
+* Image Warping and Blending
+
+---
+
+## Project Structure
+
+```
+├── panorama_generator.py
+├── images/
+│   ├── img1.jpg
+│   ├── img2.jpg
+├── README.md
+```
+
+---
+
+## Installation & Setup
+
+### Step 1: Clone Repository
+
+```
+git clone https://github.com/satwik068/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+```
+
+### Step 2: Install Dependencies
+
+```
+pip install opencv-python numpy
+```
+
+---
+
+## How to Run
+
+Run the following command in terminal:
+
+```
+python panorama_generator.py --img1 images/img1.jpg --img2 images/img2.jpg
+```
+
+---
+
+## Output
+
+* Feature matching visualization
+* Final stitched panoramic image
+
+---
+
+## Limitations
+
+* Works best when images have sufficient overlap
+* May fail for complex scenes or low-quality images
+* Currently supports only 2 images
+
+---
+
+## Future Improvements
+
+* Support multiple image stitching
+* Improve blending quality
+* Add GUI interface
+* Use deep learning-based approaches
+
+---
+
+## Author
+
+**Satwik Agrawal**
+B.Tech Student
+
+---
+
+## Note
+
+This project is developed for academic purposes.
+The implementation is based on commonly used computer vision techniques and modified for learning.
+
+---
