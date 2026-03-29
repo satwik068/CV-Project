@@ -52,17 +52,9 @@ This project is inspired by standard image stitching methods and has been **modi
 ### Step 1: Clone Repository
 
 ```
-git clone https://github.com/satwik068/YOUR-REPO-NAME.git
+git clone https://github.com/satwik068/CV-Project.git
 cd YOUR-REPO-NAME
 ```
-
-### Step 2: Install Dependencies
-
-```
-pip install opencv-python numpy
-```
-
----
 
 ## How to Run
 
