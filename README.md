@@ -53,7 +53,7 @@ This project is inspired by standard image stitching methods and has been **modi
 
 ```
 git clone https://github.com/satwik068/CV-Project.git
-cd YOUR-REPO-NAME
+cd CV-Project
 ```
 
 ## How to Run
